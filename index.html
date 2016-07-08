@@ -11,22 +11,62 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+<!-- Google Fonts -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
 <!-- Social Media Glyphicons -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<!-- Jscript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+     $(".title-text").slideUp(1).delay(500).slideDown('medium');
+
+		 $('a').click(function(){
+    		$('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+   			}, 600);
+   return false;
+	});
+
+
+});
+</script>
 </head>
+
+
+
 <body>
 
-<nav>
-StrongHouse5x5
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div id="logo">SH5x5</div>
+			</a>
+		</div>
+	</div>
 </nav>
 
 
-<div class="container">
-
-
-
+<div class="first center" id="first-section">
+			<div class="title-text center">
+				StrongHouse<br>5x5<br>
+				<a href="#second-section"><img src="imgs/arrowdown.png" id="scrollTop"></a>
+			</div>
 </div>
+
+<div class="second center" id="second-section">
+<form action="">
+	
+
+
+</form>
+</div>
+
+
 
 
 </body>
