@@ -51,6 +51,12 @@ body
 	filter: alpha(opacity=30);
 }
 
+.hover-wrap a, a:link, a:visited
+{
+	color: #ffffff !important;
+	text-decoration: none !important;
+}
+
 .second
 {
 	position: absolute;
