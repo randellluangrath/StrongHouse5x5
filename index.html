@@ -18,12 +18,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <!-- Jscript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="css/jquery-3.0.0.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 <script>
 
 $(document).ready(function(){
 
-     $(".title-text").slideUp(1).delay(500).slideDown('medium');
+     $(".title-text").slideUp(0).delay(500).slideDown('medium');
 
 		 $('a').click(function(){
     		$('html, body').animate({
@@ -44,7 +45,9 @@ $(document).ready(function(){
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<div id="logo">SH5x5</div>
+			     <a class="navbar-brand" href="index.html" id="logo">
+      stronghouse
+      </a>
 			</a>
 		</div>
 	</div>
@@ -53,9 +56,30 @@ $(document).ready(function(){
 
 <div class="first center" id="first-section">
 			<div class="title-text center">
-				StrongHouse<br>5x5<br>
-				<a href="#second-section"><img src="imgs/arrowdown.png" id="scrollTop"></a>
-			</div>
+
+				<ul style="list-style-type: none;">
+					<div class="hover-wrap">
+						<li><a href="#about">about</a></li>
+					</div>
+					<br>
+					<div class="hover-wrap">
+						<li><a href="#resource">source</a></li>
+					</div>
+					<br>
+
+					<div class="hover-wrap">
+					<li><a href="#second-section">get started</a></li> 
+					</div>
+					<br>
+
+					<div class="hover-wrap">
+						<a href="#second-section"><img src="imgs/arrowdown.png" id="scrollTop" style="margin-top: -15%;"></a>
+					</div>
+					
+
+				</ul>
+				
+		  </div>
 </div>
 
 <div class="second center" id="second-section">
